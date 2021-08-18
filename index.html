@@ -279,10 +279,22 @@
             const contain = document.querySelector('.form-contain')
             var header = document.getElementById('header')
             const menu = document.querySelector('.menu-mobile')
-            var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
-            const more = document.querySelector('.more')
+            var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+            console.log(menuItems)
+            // var x = window.matchMedia("( max-width: 739px)");
+            // function moremobile(x){
+            //     if (x.matches){
+            //         document.querySelector(".more"),addEventListener('mouseover',function(){
+            //             header.style.overflow = 'visible'
+            //             header.style.height = '240px';
+            //             event.preventDefault()
+                
+            // })
+            //     }
+            // }
+            const more = document.querySelector('.more') 
             var mores_nav = document.querySelectorAll('.more li a') 
-            console.log(mores_nav)
+            console.log(more)
             function showBuyTickets(){
                 form.classList.add('open') 
             }
@@ -310,16 +322,34 @@
             for(var i = 0; i<menuItems.length;i++){
                 var menuItem = menuItems[i];
                 menuItem.onclick = function(){
-                    header.style.height = '46px'
+                    header.style.height = '46px';
                     header.style.overflow = 'hidden';
                 }
             }
-            more.addEventListener('click',function(){
-                header.style.overflow = 'visible'
-                header.style.height = '240px';
-                event.preventDefault()
+            // var x = window.matchMedia("(max-width: 739px)")
+            // function myFunction(x) {
+            //     if (x.matches) { // If media query matches
+            //         more.addEventListener('click',function(){
+            //         header.style.overflow = 'visible';
+            //         header.style.height = '240px';
+            //         event.preventDefault()
                 
-            })
+            // })}
+            //     else {
+            //         more.addEventListener('click',function(){
+            //         header.style.overflow = 'visible';
+            //         header.style.height = '46px';
+            //         event.preventDefault()
+            //     })
+            //     }
+            // }
+            // x.addListener(myFunction)
+            more.addEventListener('click',function(){
+                header.style.overflow = 'visible';
+                header.style.height = 'auto';
+                event.preventDefault()
+            })    
+            // // })
             
             console.log(mores_nav)
             close.addEventListener('click',hideTickets)
