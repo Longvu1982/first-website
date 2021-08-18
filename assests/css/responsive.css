@@ -1,0 +1,156 @@
+/* mobile*/
+@media (max-width: 739px) {
+    #nav{
+        display: block;
+    }
+    #nav > li {
+        display: block;
+    }
+    #nav > li a {
+        display: block;
+    }
+    
+    #header .search-icon{
+        display: none;
+    }
+    .menu-mobile-icon{
+        pointer-events: none;
+    }
+    #nav .subnav a{
+        background-color: black;
+        color: rgba(255, 255, 255, 0.904);
+        display: inline-block;
+        padding: 5px 0px 5px 20px;
+    }
+    #nav .subnav{
+        margin-left: 20px;
+        background-color: black;
+        
+    }
+    #nav .subnav li{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #content .about{
+        padding: 40px 16px 0px;
+        scroll-margin-top:20px ;
+    }
+    #content .profile{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+    #content .pro{
+        width: 50%;  
+        padding-bottom: 20px;  
+    }
+    .profile .picture{
+        width: 100%;
+        padding-bottom: 20px;
+        margin: 0px auto;
+    }
+    .tour-date{
+        margin-top: 50px;
+    }
+    .tour-place{
+        flex-direction: column;
+        padding-bottom: 60px;
+    }
+    .tour-main {
+        width: 100%;
+        padding: 0px 20px;
+    }
+    .tour-place .place{
+        width: 100%;
+        padding-bottom: 25px;
+    }
+    .form-contain{
+        max-width: 95%;
+    }
+    .contact-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-body .input-box,
+    .contact-body .info{
+        width: 100%;
+        padding: 20px 20px;
+    }
+    #content .sub-heading{
+        margin-bottom: 20px;
+    }
+    .contact-body .input-box .name, 
+    .contact-body .input-box .email{
+        padding: 10px 5px;
+        width : calc(((100%-28px)/2) - 4px);
+        margin: 0px;
+    }
+    .contact{
+        margin-bottom: 50px;
+    }
+    .contact-body .input-box .name{
+        margin-right: 8px;
+        
+    }
+    .contact-body .info .icon p{
+        display: inline-block;
+        font-size: 13px;
+        color: rgba(95, 88, 88, 0.904);
+
+    }
+    .contact-body .info .icon{
+        margin-bottom: -2px;
+    }
+    .form-body label{
+        color:rgb(124, 117, 117);
+    }
+    
+    
+}
+/* tablet */
+@media (max-width: 1023px) and (min-width: 740px) {
+    #content .info-text {
+        padding: 0px 20px;
+    }
+    .tour-place{
+        padding: 10px 10px 80px;
+    }
+    .ticket-list{
+        margin: 0px 10px 10px;
+    
+    }
+    .tour-place .place{
+        width: 240px;
+    }
+    .contact-body .info{
+        width: 55%;
+        margin-left: 20px;
+    }
+    .contact-body .input-box{
+        width: 325px;
+        display: inline-block;
+        padding-right: 10px;
+        
+    }
+    .contact-body .input-box .name, .contact-body .input-box .email{
+        width: 47.3%;
+    }
+    #header{
+        overflow: visible;
+    }
+    #header .menu-mobile{
+        display: none;
+    }
+}
+/* pc and large tablet */
+@media (min-width: 1023px) {
+    #header{
+        overflow: visible;
+    } 
+    #header .menu-mobile{
+        display: none;
+    }
+}
